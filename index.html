@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Observer Bitcoin</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <header class="header flex">
+        <h2 class="title flex">Title: Patron Observer</h2>
+    </header>
+    <main class="main flex">
+        <section class="interface flex">
+            <div class="description flex font">
+                Instructions:
+                Use the button "+Subscriptor" to add
+                a card which will be subscribed to the
+                selected currency
+            </div>
+
+            <section class="panel flex">
+
+                <div class="panel--input flex">
+                    <div class="panel--input--subscriptor flex">
+                        <input class="items" type="button" id="addSubs" value="+ Subscriptor">
+                    </div>
+                    
+                    <div>
+                        <select class="panel--input--selector items" id="selectCoin">
+                            <option class="optionCoin" value="USD">USD</option>
+                            <option class="optionCoin" value="AUD">AUD</option>
+                            <option class="optionCoin" value="BRL">BRL</option>
+                            <option class="optionCoin" value="CAD">CAD</option>
+                            <option class="optionCoin" value="CHF">CHF</option>
+                            <option class="optionCoin" value="CLP">CLP</option>
+                            <option class="optionCoin" value="CNY">CNY</option>
+                            <option class="optionCoin" value="DKK">DKK</option>
+                            <option class="optionCoin" value="EUR">EUR</option>
+                            <option class="optionCoin" value="GBP">GBP</option>
+                            <option class="optionCoin" value="HKD">HKD</option>
+                            <option class="optionCoin" value="INR">INR</option>
+                            <option class="optionCoin" value="ISK">ISK</option>
+                            <option class="optionCoin" value="JPY">JPY</option>
+                            <option class="optionCoin" value="KRW">KRW</option>
+                            <option class="optionCoin" value="NZD">NZD</option>
+                            <option class="optionCoin" value="PLN">PLN</option>
+                            <option class="optionCoin" value="RUB">RUB</option>
+                            <option class="optionCoin" value="SEK">SEK</option>
+                            <option class="optionCoin" value="SGD">SGD</option>
+                            <option class="optionCoin" value="THB">THB</option>
+                            <option class="optionCoin" value="TRY">TRY</option>
+                            <option class="optionCoin" value="TWD">TWD</option>
+                        </select>
+                        <input class="items" type="button" id="clearSubs" value="Clear">
+                    </div>
+                </div>
+                <div class="panel--example flex font" id="example">
+                    <div class="panel--example--header flex">
+                        <img src="./media/bitcoin.png" alt="bitcoin">
+                        <h3 id="example--title">Bitcoin a </h3>
+                        <img src="./media/usd.jpg" alt="USD">
+                    </div>
+                    <p class="panel--example--text flex">
+                        1 bitcoin equivale a
+                    </p>
+                    <p class= "flex"id="example--value"></p>
+                </div>
+                
+            </section>
+        </section>
+        <section id="subscritors" class="container flex">
+
+        </section>
+    </main>
+    <footer class="footer flex">
+        <p class="footer--items">Ignacio Sepúlveda Huenulao</p>
+        <a class="footer--items" href="https://github.com/Azthery?tab=repositories">GitHub</a>
+    </footer>
+    <script>var exports = {"__esModule": true};</script>
+    <script src="./dist/index.js"></script>
+</body>
+</html>
